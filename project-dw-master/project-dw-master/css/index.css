@@ -1,0 +1,232 @@
+
+:root {
+    --corPrincipal: #f7f7f7;
+    --corFundo: #181733;
+    --corTextoPrincipal: #202020;
+    --coresSecundarias: #0c1d86;
+    --coresTerceiras: #2742ab;
+    --coresQuartas: #2742ab;
+    --coresQuintas: #640333;
+    --coresSextas: #8f0b39;
+    --coresSetimas: #b62853;
+}
+
+:root {
+    --fontTextoPrincipal: "Montserrat", sans-serif;
+    --fontStyle: normal;
+    --fontWeightInicial: 500;
+}
+
+body {
+    background-color: var(--corPrincipal);
+    color: var(--corTextoPrincipal);
+    font-family: var(--fontTextoPrincipal);
+    font-style: var(--fontStyle);
+    font-weight: var(--fontWeightInicial);
+}
+
+:root {
+    --corBordaCard: #202020;
+    --corPrincipalCard: transparent;
+    --corLetrasCard: #202020
+}
+
+.sectionBanner {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    background-image: url('../view/img/barcelonaCamisa.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.imgSpace {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    background-image: url('../view/img/Camp_Nou_més_que_un_club.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.load{
+    width: 100%;
+    padding: 200px;
+    text-align: center;
+}
+
+.sectionCard {
+    width: 100%;
+    height: auto;
+    background-color: var(--corFundo);
+    padding: 1%;
+}
+
+.sectionCard--seg{
+    width: 100%;
+    height: auto;
+    background-color: var(--corFundo);
+    padding: 1%;
+}
+
+.groupTitle{
+    text-align: center;
+    margin: 3% 0%;
+}
+
+.groupTitle h1{
+    color: var(--coresSextas);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.groupTitle--seg h1{
+    color: var(--corFundo);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cardGroup {
+    width: 95%;
+    height: auto;
+    background-color: var(--corPrincipal);
+    padding: 1%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+.card {
+    background-color: transparent;
+    border-radius: 8px;
+    
+    overflow: hidden;
+    width: 300px;
+    text-align: start;
+}
+
+.imgCardGroup {
+    text-align: center;
+}
+
+.imgCard {
+    width: 70%;
+    height: auto;
+}
+
+.titleCard {
+    font-size: 14px;
+    margin: 15px;
+    position: relative;
+    left: 25px;
+    font-weight: 600;
+}
+
+.tamanhoCard{
+    font-size: 14px;
+    margin: 15px;
+    position: relative;
+    left: 25px;
+    font-weight: 600;
+}
+
+.precoCard {
+    font-size: 14px;
+    margin: 15px;
+    position: relative;
+    left: 25px;
+    font-weight: 600;
+}
+
+.buttonCardGroup {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.buttonComprar {
+    padding: 10px 25px;
+    background: rgb(68,91,177);
+    background: linear-gradient(90deg, rgba(68,91,177,1) 0%, 
+     rgba(3,1,27,1) 60%,
+     rgba(156,44,74,1) 100%);
+    color: var(--corPrincipal);
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.imgSpace--seg{
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    background-image: url('../view/img/1500x500.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.groupTitle--retro{
+    text-align: center;
+    margin: 3% 0%;
+}
+
+.groupTitle--retro h1{
+    font-size: 3em;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+.title{
+        font-family: 'Open Sans', sans-serif;
+}
+
+/* rodapé */
+
+.rodape-barcelona{
+    background-color: #a50044;
+    color: #ffd700;
+    padding: 30px 0;
+    text-align: center;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.rodape-barcelona .conteudo-rodape{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.rodape-barcelona .logo-rodape img {
+    width: 100px;
+    color: #0c1d86;
+}
+
+.rodape-barcelona .info-rodape {
+    margin-top: 10px;
+}
+
+.rodape-barcelona .redes-sociais ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.rodape-barcelona .redes-sociais ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.rodape-barcelona .redes-sociais a {
+    color: #0c1d86;
+    font-size: 26px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset='utf-8'>
+    <title>Cadastro</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/cadastro.css'>
+    <script src='../script/cadastro.js'></script>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="sectionBanner">
+            <a href="../index.html" class="btnVoltar">Voltar</a>
+        </div>
+        <div class="form">
+            <div class="aling">
+                <div class="title-form">
+                    <img class="logoForm"
+                        src="https://upload.wikimedia.org/wikipedia/en/thumb/4/47/FC_Barcelona_%28crest%29.svg/1200px-FC_Barcelona_%28crest%29.svg.png"
+                        alt="FC Barcelona Logo">
+                </div>
+                <div class="body-form">
+                    <form id="registration-form">
+                        <input type="text" name="name" id="name" placeholder="Nome: " class="input" required>
+
+                        <input type="email" name="email" id="email" placeholder="Email: " class="input" required>
+
+                        <input type="password" name="password" id="password" placeholder="Senha: " class="input" required>
+
+                        <input type="text" name="cpf_cnpj" id="cpf_cnpj" placeholder="CPF/CNPJ:" class="input" required>
+
+                        <label for="dataDeAniversario">Data de Aniversário:</label>
+                        <input type="date" name="dataDeAniversario" id="dataDeAniversario" required>
+
+                        <div class="areaTermo">
+                            <label for="termos">Aceito os termos: </label>
+                            <input type="checkbox" name="termos" id="termos" class="inputCheckbox" required>    
+                        </div>
+
+                        <input type="button" value="Cadastrar-se" onclick="cadastro()">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

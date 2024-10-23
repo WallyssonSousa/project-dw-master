@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset='utf-8'>
+    <title>Endereço</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/endereco.css'>
+    <script src='../script/enderco.js'></script>
+</head>
+
+<body>
+    <a href="../view/home.html" class="btnVoltar">Voltar</a>
+
+    <div class="container">
+        <div class="sectionBanner">
+
+            <div class="form">
+                <div class="aling">
+                    <div class="title-form">
+                        <img class="logoForm"
+                            src="https://upload.wikimedia.org/wikipedia/en/thumb/4/47/FC_Barcelona_%28crest%29.svg/1200px-FC_Barcelona_%28crest%29.svg.png"
+                            alt="FC Barcelona Logo">
+                    </div>
+                    <h1 class="text">
+                        Cadastre seu endereço de entrega!
+                    </h1>
+                    <div class="body-form">
+                        <form id="registration-form">
+                            <input type="text" name="title" id="title" placeholder="Title" class="input" required>
+
+                            <input type="text" name="cep" id="cep" placeholder="Cep" class="input" required>
+
+                            <input type="text" name="address" id="address" placeholder="Address" class="input" required>
+
+                            <input type="text" name="number" id="number" placeholder="Number" class="input" required>
+
+                            <input type="text" name="complement" id="complement" placeholder="Complemento" class="input"
+                                required>
+
+                            <input type="button" value="Cadastrar-end" onclick="endereco()">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

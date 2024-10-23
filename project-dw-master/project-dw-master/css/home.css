@@ -1,0 +1,86 @@
+:root {
+    --corPrincipal: #f7f7f7;
+    --corFundo: #181733;
+    --corTextoPrincipal: #202020;
+    --coresSecundarias: #0c1d86;
+    --coresTerceiras: #2742ab;
+    --coresQuartas: #2742ab;
+    --coresQuintas: #640333;
+    --coresSextas: #cf122d;
+    --coresSetimas: #b62853;
+}
+
+:root {
+    --fontTextoPrincipal: "Montserrat", sans-serif;
+    --fontStyle: normal;
+    --fontWeightInicial: 500;
+}
+
+body {
+    font-family: var(--fontTextoPrincipal);
+    overflow-x: hidden;
+    background-color: var(--corFundo);
+}
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 0;
+}
+
+hr {
+    border-color: var(--corTextoPrincipal);
+}
+
+.logo-barca {
+    width: 8%;
+    text-align: center;
+    position: relative;
+}
+
+.button-addEnd {
+    padding: 15px 20px;
+    background-color: #cf122d;
+    color: var(--corPrincipal);
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+main {
+    display: grid;
+    place-items: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th{
+    padding: 12px;
+    text-align: center;
+    border: 1px solid var(--coresSextas);
+    color: var(--coresSextas);
+}
+
+td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid var(--coresSextas);
+    color: var(--corPrincipal);
+}
+
+.buttonCrud{
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    background-color: var(--coresQuartas);
+    color: var(--corPrincipal);
+    cursor: pointer;
+}
