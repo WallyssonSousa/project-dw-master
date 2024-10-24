@@ -5,7 +5,7 @@
     <meta charset='utf-8'>
     <title>Atualizar Endereço</title>
     <link rel='stylesheet' type='text/css' media='screen' href='../css/atualizar_end.css'>
-    <script src='../script/cadastro.js'></script>
+    <script src='../script/atualizar_end.js'></script>
 </head>
 
 <body>
@@ -23,24 +23,13 @@
                         alt="FC Barcelona Logo">
                 </div>
                 <div class="body-form">
-                    <form id="registration-form">
-                        <input type="text" name="name" id="name" placeholder="Nome: " class="input" required>
-
-                        <input type="email" name="email" id="email" placeholder="Email: " class="input" required>
-
-                        <input type="password" name="password" id="password" placeholder="Senha: " class="input" required>
-
-                        <input type="text" name="cpf_cnpj" id="cpf_cnpj" placeholder="CPF/CNPJ:" class="input" required>
-
-                        <label for="dataDeAniversario">Data de Aniversário:</label>
-                        <input type="date" name="dataDeAniversario" id="dataDeAniversario" required>
-
-                        <div class="areaTermo">
-                            <label for="termos">Aceito os termos: </label>
-                            <input type="checkbox" name="termos" id="termos" class="inputCheckbox" required>    
-                        </div>
-
-                        <input type="button" value="Atualizar Endereço" onclick="cadastro()">
+                    <form id="formEditEndereco">
+                        <input type="text" id="title" placeholder="Título" class="input" required>
+                        <input type="text" id="cep" placeholder="CEP " class="input" required>
+                        <input type="text" id="address" placeholder="Endereço" class="input" required>
+                        <input type="text" id="number" placeholder="Número" class="input" required>
+                        <input type="text" id="complement" placeholder="Complemento" class="input">
+                        <button type="submit" class="submit">Atualizar</button>
                     </form>
                 </div>
             </div>

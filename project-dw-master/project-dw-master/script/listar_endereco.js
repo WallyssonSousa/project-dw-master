@@ -44,7 +44,7 @@ function exibirEnderecos(enderecos) {
             <td>${endereco.number}</td>
             <td>${endereco.complement}</td>
             <td>
-                <button class="buttonCrud">Editar</button>
+                <button class="buttonCrud" onclick="editarEndereco(${endereco.id})">Editar</button>
             </td>
             <td>
                 <button class="buttonCrud" onclick="deletarEndereco(${endereco.id})">Excluir</button>
@@ -54,4 +54,8 @@ function exibirEnderecos(enderecos) {
     listaEnderecos.innerHTML = linhas;
 }
 
-listarEnderecos();
+function editarEndereco(id){
+    location.href = `atualizar_end.html?id=${id}`;
+}
+
+listarEnderecos()
