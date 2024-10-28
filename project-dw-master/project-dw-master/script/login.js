@@ -26,12 +26,3 @@ async function login () {
 }
 
 
-/* get pega dados */
-/* set atualiza dados */
-
-/* function cadastroEndereco(){
-    let user = JSON.parse(localStorage.getItem("user"));
-    console.log(user.access_token)
-}
-
-cadastroEndereco();  */

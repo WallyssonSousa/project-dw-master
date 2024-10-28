@@ -1,3 +1,4 @@
+
 :root {
     --corTextoPrincipal: #f7f7f7;
     --corFundo: #181733;
@@ -8,7 +9,6 @@
     --coresQuintas: #640333;
     --coresSextas: #8f0b39;
     --coresSetimas: #b62853;
-    --corTitle: #fdc52c;
 }
 
 :root {
@@ -18,12 +18,15 @@
 }
 
 body {
-    background-color: var(--corFundo);
+    background-image: url('../view/img/imgFundoBarcelona\ Login.jpg');
     color: var(--corTextoPrincipal);
     font-family: var(--fontTextoPrincipal);
     font-style: var(--fontStyle);
     font-weight: var(--fontWeightInicial);
     display: flex;
+    background-size: auto ;
+    background-repeat: no-repeat;
+    background-position: center;
     align-items: center;
 }
 
@@ -33,96 +36,31 @@ body {
     --corLetrasCard: #202020
 }
 
-.title {
-    color: var(--corTitle);
-    font-size: 1.5em;
-}
-
-.align {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-}
-
-.body-form {
-    width: 100%;
-    height: 100%;
-}
-
-.body-form {
-    display: grid;
-    place-items: center
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-.input,
-input[type=date] {
-    background-color: transparent;
-    border: 1px solid transparent;
-    border: 1px solid;
-    border-radius: 6px;
-    margin: 10px 0;
-    padding: 10px 13px;
-    color: #f0f0f0;
-    background-color: transparent;
-    width: 100%;
-}
-
-.input::placeholder {
-    color: #f0f0f0;
-}
-
-input:focus {
-    outline: none;
-    border: 1px solid transparent;
-}
-
-input[type=button], a{
-    padding: 10px 25px;
-    background-color: #cf122d;
-    color: var(--corPrincipal);
-    text-decoration: none;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 10px 20px;
-}
-
-.btnVoltar{
-    position: relative;
-    top: 20px;
-}
-
-
-.title-form {
-    width: 100%;
-    height: 5%;
-    text-align: center;
-}
-
-.logoForm {
-    width: 5%;
-    text-align: center;
-    position: relative;
-}
-
-/* .sectionBanner {
+.sectionBanner {
     width: 100%;
     height: 600px;
     overflow: hidden;
-    background-image: url('../view/img/Meci.jpg');
+    background-image: url('../view/img/imgFundoBarcelona\ Login.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 10px;
-} */
-/* 
+}
+
+.container{
+    background-color: var(--corFundo);
+    width: 80%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .form{
     background-color: var(--corFundo);
     width: 100%;
@@ -131,8 +69,21 @@ input[type=button], a{
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-} */
-/*
+}
+
+.title-form{
+    width: 100%;
+    height: 5%;
+    text-align: center;
+}
+
+.logoForm{
+    width: 10%;
+    text-align: center;
+    position: relative;
+    right: 25px;
+}
+
 .body-form{
     width: 90%;
     height: 95%;
@@ -147,6 +98,27 @@ form{
     flex-direction: column;
 }
 
+.input, input[type=date]{
+    background-color: transparent;
+    border: 1px solid transparent;
+    border: 1px solid;
+    border-radius: 6px;
+    margin: 10px 0;
+    padding: 10px 13px;
+    color: #f0f0f0;
+    background-color: transparent;
+    width: 100%;
+}
+
+.input::placeholder{
+    color: #f0f0f0;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid transparent;
+}
+
 .areaTermo{
     display: flex;
     flex-direction: row;
@@ -156,34 +128,29 @@ form{
 
 label{
     font-size: 12px;
-    margin: 5px;    
+    margin: 5px;
     color: #f0f0f0;
 }
 
-
-input[type=button]:hover{
-    background: rgb(68,91,177);
-    background: linear-gradient(90deg, rgba(68,91,177,1) 0%, 
-     rgba(3,1,27,1) 60%,
-     rgba(156,44,74,1) 100%);
+input[type=button]{
+    padding: 10px 25px;
+    background-color: var(--coresQuartas);
+    color: var(--corPrincipal);
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 15px;
 }
 
 .btnVoltar{
     text-decoration: none;
     color: var(--corTextoPrincipal);
     padding: 8px 15px;
-    background-color: #cf122d;
+    background-color: var(--coresQuartas);
     border-radius: 5px;
     position: relative;
-    left: 10px;
-    top: 10px;
+    left: 15px;
+    top: 15px;
     transition: all 2s;
-    
 }
-
-.btnVoltar:hover{
-    background: rgb(68,91,177);
-    background: linear-gradient(90deg, rgba(68,91,177,1) 0%, 
-     rgba(3,1,27,1) 60%,
-     rgba(156,44,74,1) 100%);
-} */
